@@ -20,7 +20,7 @@ pipeline {
             steps {
                 sh "pwd"
                 sh "ls -a"
-                sh "/usr/local/bin/docker build . -t tomcatsamplewebapp:${env.BUILD_ID}"
+                sh "sudo /usr/local/bin/docker build . -t tomcatsamplewebapp:${env.BUILD_ID}"
             }
         }
 
