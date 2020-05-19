@@ -23,7 +23,7 @@ pipeline {
             steps {
                 sh "pwd"
                 sh "ls -a"
-                sh " echo 'picard' > sudo -S docker build -t tomcatsamplewebapp:${env.BUILD_ID} ."
+                sh " echo 'picard' | sudo -S docker build -t tomcatsamplewebapp:${env.BUILD_ID} ."
             }
         }
 
