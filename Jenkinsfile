@@ -23,6 +23,7 @@ pipeline {
             steps {
                 sh "pwd"
                 sh "ls -a"
+		sh "sudo chown root:jenkins /run/docker.sock"
                 sh "docker build . -t tomcatsamplewebapp:${env.BUILD_ID}"
             }
         }
