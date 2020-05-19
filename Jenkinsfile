@@ -3,8 +3,7 @@ pipeline {
     tools {
         maven 'LocalMaven'
     }
-services { docker
-		}
+
 
     stages {
         stage('Build Application') {
